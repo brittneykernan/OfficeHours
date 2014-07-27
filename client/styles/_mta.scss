@@ -1,0 +1,12 @@
+$sprite-size: 42px;
+
+[class^="mta-"] {
+	height: $sprite-size;
+	width: $sprite-size;
+	margin-left: -4px;
+	background: url(../img/mta-stations.png) no-repeat transparent 0 0;
+}
+.mta-f {
+	background-position-y: -$sprite-size*4;
+	background-position-x: -$sprite-size*2;
+}

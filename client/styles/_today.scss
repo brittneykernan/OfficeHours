@@ -1,0 +1,68 @@
+/* today's schedule */
+.today {
+	@extend .height-full;
+	@extend .box-size;
+	background: #f5f5f5;
+	@include clearfix;
+	font-size: 1.15em;
+
+	.row {
+		@include clearfix;
+		margin: 0.5rem 0;
+	}
+
+	float:left;
+	width: 40%;
+	padding: 1em;
+	line-height: 1.15;
+
+	.left-col {
+		width: 40%;
+		padding-right: 0.5em;
+
+	}
+	.right-col {
+		width: 60%;
+		padding-left: 0.5em;
+	}
+}
+.today-heading {
+	line-height:1.5rem;
+}
+.today-date {
+	font-size: 1.5rem;
+}
+
+.today-location-address {
+	font-size: 1rem;
+	padding-top:0.4em;
+}
+
+$avatar-height: 36px;
+
+.today-who {
+	line-height: $avatar-height;
+}
+
+.today-instructor-name {
+		display:table-cell;
+		vertical-align: middle;
+		height: $avatar-height;
+}
+.today-instructor-img {
+		border-radius: 50%;
+		height: $avatar-height;
+		float:left;
+		display:block;
+		margin-right: 0.5rem;
+}
+
+.today-trains {
+	line-height: 38px
+}
+
+.today-map {
+	height: 170px;
+	margin: 5px 0;
+	border: 1px solid #ddd;
+}

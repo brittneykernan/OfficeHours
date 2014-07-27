@@ -1,0 +1,22 @@
+/* days */
+.days {
+	@extend .box-size;
+	background: #efefef;
+	@include clearfix;
+	float:right;
+	width: 60%;
+	padding: 1.5em 0 1em;
+	font-size: 1.15em;
+
+	a {
+		padding-left: 19px;
+	}
+}
+
+.days-scroller {
+	transition: transform 0.1s;
+}
+
+.current-day {
+	color: red;
+}

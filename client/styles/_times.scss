@@ -1,0 +1,69 @@
+/* scheduler */
+.times {
+	@extend .box-size;
+	@include clearfix;
+	float: left;
+	padding: 1em;
+
+	.left-col {
+		text-align: right;
+		width: 150px;
+		padding-right: 0.5em;
+	}
+	.right-col {
+		float: left;
+		padding-left: 0.5em;
+	}
+	.row {
+		transition: color 0.25s;
+		@include clearfix;
+		margin: 0.7em;
+		height: 47px;
+		line-height: 47px;
+	}
+	.go {
+		transition: opacity 0.25s, background 0.25s;
+		opacity: 0;
+		height: 48px;
+		padding: 0 1em;
+		border: none;
+		margin: 0;
+		color: #fff;
+		&:hover {
+			background: #f5503e;
+		}
+	}
+	.cancel {
+		display:none;
+	}
+	input {
+		width: 200px;
+	}
+	.booked {
+		display:none;
+		margin-right: 1rem;
+	}
+}
+.status-booked {
+	color: #bdbdbd;
+	.right-col {
+		text-transform: uppercase;		
+	}
+	input, .go {
+		display:none;
+	}
+	.booked {
+		display: inline;
+	}
+	&.active {
+		color: $color-active;
+
+		.cancel {
+			display: inline;
+		}
+	}
+}
+.valid .go {
+	opacity: 1;
+	cursor: pointer;
+}

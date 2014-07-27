@@ -1,0 +1,84 @@
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+
+$color-active: #f5503e;
+
+/* extensibles */
+
+.box-size {
+	box-sizing: border-box;
+}
+
+.height-full {
+	height: 100%;
+}
+
+/* mixins */
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; } 
+}
+
+/* tags */
+
+html, body {
+	@extend .height-full;
+}
+
+body {
+}
+
+body, input, button {
+	font-family: Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	color: #888;
+	outline: none;
+
+}
+
+a {
+	transition: color 0.25s;
+	color: #cbcbcb;
+	text-decoration: none;
+	&:hover {
+		color: $color-active;
+	}
+}
+
+input {
+	border: none;
+	background: #f5f6f6;
+	padding: 0.9em 0.8em 0.9em 0.7em;
+	margin: 0;
+	@include input-placeholder {
+    color: #bdbdbd;
+  }
+}
+
+/* reusables */
+
+.left-col {
+	float: left;
+	clear: left;
+	text-align:right;
+	@extend .box-size;
+}
+.right-col {
+	float: right;
+	clear: right;	
+	@extend .box-size;
+}
+
+.container  {
+	@extend .height-full;
+}
+
+@import "today";
+@import "days";
+@import "times"; 
+@import "mta";

@@ -1,0 +1,23 @@
+office hours
+
+where am i - geolocation open tab or enter address
+when am i - normally held days
+open slots - spreadsheet
+log of old times
+spreadsheet - 30 mins slots or first come
+
+days available
+who 
+where
+
+office hours
+ day
+ hours
+ instructor 
+ location
+ schedule
+  email 
+  name
+  time slot
+
+https://github.com/nathanstaines/generator-marionette-express
